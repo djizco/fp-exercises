@@ -1,4 +1,12 @@
-# Functional Programming
+# Functional Programming Exercises
+
+## Getting Started
+
+* Requires node version 10.0.0 or higher.
+
+```bash
+npm install
+```
 
 Implement each function in the following order.
 Avoid using native JavaScript implementations when possible.
@@ -19,9 +27,9 @@ The function is complete when all tests are passing.
 To run the test suite enter the command:
 
 ```bash
-"npm test"
+npm test
 # or
-"npm test:watch"
+npm test:watch
 ```
 
 ## Part I: Mathematics
