@@ -1,0 +1,40 @@
+{
+  "name": "fp-exercises",
+  "version": "0.1.0",
+  "description": "Functional Programming Exercises.",
+  "main": "index.js",
+  "scripts": {
+    "enable": "node ./scripts/enable.js",
+    "enable:challenge": "node ./scripts/enable-challenge.js",
+    "lint": "./node_modules/eslint/bin/eslint.js problems",
+    "lint:fix": "./node_modules/eslint/bin/eslint.js problems --fix",
+    "test": "jest --verbose",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djizco/fp-exercises.git"
+  },
+  "author": {
+    "name": "Rico Rojas",
+    "email": "djizco@yahoo.com",
+    "url": "https://github.com/djizco"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djizco/fp-exercises/issues"
+  },
+  "homepage": "https://github.com/djizco/javascript-exercises#readme",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "jest": "24.7.1"
+  }
+}
