@@ -5,7 +5,7 @@ Works on any combination of strings and numbers.
 
 */
 
-export default function max(n, m) {
+export default function min(n, m) {
   if (
     (typeof n !== 'number' && typeof n !== 'string')
     || (typeof m !== 'number' && typeof m !== 'string')
