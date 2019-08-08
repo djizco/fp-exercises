@@ -10,6 +10,13 @@ xdescribe('pick', () => {
     expect(pick({ a: 1, b: 2, c: 3, d: 4 }, ['a', 'z', 'x'])).toEqual({ a: 1 });
   });
 
+  it('should not use Array.includes()', () => {
+    // eslint-disable-next-line
+    Array.prototype.includes = jest.fn();
+    pick({ a: 1 }, ['']);
+    expect(Array.prototype.includes).not.toHaveBeenCalled();
+  });
+
   xit('should throw an error if invalid inputs are given', () => {
     expect(() => pick()).toThrowError();
     expect(() => pick(null)).toThrowError();
